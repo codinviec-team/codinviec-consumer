@@ -4,7 +4,7 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOSTRAP_SERVER}
 server:
-  port: 8081
+  port: ${PORT:${SERVER_PORT:8081}}
 
 email: # send grid
   key: ${SENDGRID_API_KEY}
